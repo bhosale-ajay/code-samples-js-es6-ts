@@ -5,7 +5,8 @@ samplesLibrary.loadSamples = function(callback) {
         { title: "OOP", src: "oop.js", topics: [] },
 	];
 	var totalSamples = samples.length;
-	for(var sampleCounter = 0;sampleCounter < samples.length; sampleCounter++ ){
+	var completed = 0;
+	for(var sampleCounter = 0;sampleCounter < totalSamples; sampleCounter++ ){
 		loadTopicsFromServer(samples[sampleCounter]);
 	}
 
@@ -17,8 +18,8 @@ samplesLibrary.loadSamples = function(callback) {
 				if(xmlhttp.status == 200){
 					sample.topics = parseTopics(xmlhttp.responseText);
 				}
-				totalSamples--;
-				if(totalSamples == 0){
+				completed++;
+				if(totalSamples == completed){
 					callback(samples);
 				}
 			}
