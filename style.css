@@ -1,0 +1,65 @@
+body {
+	margin:0;
+	padding: 0;
+}
+.editor {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 510px;
+}
+.editorbox {
+	float: left;
+	width: 400px;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+.elasticcontainer {
+	border-top: 1px solid #000;
+}
+.outercontainer {
+	width:100%;
+	overflow-y:none;
+	overflow-x:scroll;
+}
+.console {
+	width:100%;
+	overflow:scroll;
+}
+.message, .error {
+    padding: .2em .6em .3em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    white-space: nowrap;
+    vertical-align: baseline;
+	display: inline-block;
+    width : 100%;
+}
+.message {
+	background-color: #5cb85c;
+}
+.error {
+	background-color: #d9534f;
+}
+h1, h2, h3, h4 {
+	padding-left: 5px;
+	margin:5px;
+}
+.selectWidth {
+    width: 150px;
+  	margin:10px;
+}
+div.floatLeft {
+    float:left;
+}
+div.topicTitleContainer {
+    height: 34px;
+    margin:10px;
+    line-height: 1.42857143;
+}
+span.topicTitle {
+    color: #555;
+    font-weight:700;
+}

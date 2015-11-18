@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learn JavaScript, ES6, and TypeScript</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="lib/bootstrap3.3.5.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="lib/jquery.min.2.1.4.js"></script>          
+    <script src="samples.js"></script>
+    <script src="lib/ace/ace.js"></script>
+    <script src="lib/ace/mode-javascript.js"></script>
+    <script src="lib/ace/mode-typescript.js"></script>
+    <script>
+      var isFirefox = typeof InstallTrigger !== 'undefined';
+      var scriptElement = "<script" + " src='site.js'"; 
+      if(isFirefox){
+        scriptElement +=" type='application/javascript;version=1.7'";
+      }
+      scriptElement +="></"+ "script>";
+      document.write(scriptElement);
+    </script>
+  </head>
+  <body>
+    <div class="header">
+        <h3>Learn JavaScript, ES6, and TypeScript</h3>
+        <div class="form-inline floatLeft">
+            <select class="form-control selectWidth sampleSelector"></select>
+        </div>
+        <div class="topicTitleContainer floatLeft">
+            <button id="prevTopic" type="button" class="btn btn-default" aria-label="Left Align"><</button>
+            <button id="nextTopic" type="button" class="btn btn-default" aria-label="Left Align">></button>
+            <span class="topicTitle"></span>
+        </div>
+    </div>
+    <div class="outercontainer">
+      <div class="elasticcontainer">
+      </div>
+    </div>
+    <div class="console">
+    </div>
+  </body>
+</html>
+<!--
+Following files are copied from npm\node_modules\typescript\lib (1.6.2)
+1. lib/typescript.js
+2. typings/lib.d.ts
+3. typings/lib.es6.d.ts
+ -->
