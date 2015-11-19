@@ -25,7 +25,7 @@ samplesLibrary.loadSamples = function(callback) {
 			}
 		}
 	
-		xmlhttp.open("GET", "/samples/" + sample.src, true);
+		xmlhttp.open("GET", "samples/" + sample.src, true);
 		xmlhttp.send();	
 	}
 	
