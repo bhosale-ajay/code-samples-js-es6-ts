@@ -328,10 +328,6 @@ for(let eachProperty in employee){
     console.log(eachProperty + "-"
 		+ employee[eachProperty]);
 }
-for(var eachProperty in employee){
-	console.log(eachProperty + "-"
-		+ employee[eachProperty]);
-}
 //EOT//
 //*Function Declaration*//
 //ES5//

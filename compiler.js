@@ -31,7 +31,7 @@ function loadTypeingFromServer(typing){
         }
     }
 
-    xmlhttp.open("GET", "/typings/" + typing, true);
+    xmlhttp.open("GET", "/typings/" + typing + ".js", true);
     xmlhttp.send();	
 }
 
